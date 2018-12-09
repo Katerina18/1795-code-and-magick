@@ -61,7 +61,7 @@ window.renderStatistics = function (ctx, players, times) {
         CLOUD_Y + CLOUD_HEIGHT - (GAP + FONT_HEIGHT)
     );
 
-    if (players[i] == 'Вы') {
+    if (players[i] === 'Вы') {
       ctx.fillStyle = 'rgba(255, 0, 0, 1)';
     } else {
       ctx.fillStyle = 'rgba(0, 0, 255, ' + Math.random().toString() + ')';
